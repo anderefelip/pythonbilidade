@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cont_Py</title>
+    <link rel="shortcut icon" href="/static/images/gamekeep_logo.ico" type="image/ico">
+
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/partials/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+  
+</head>
+<body>
+    <div class="box">
+        <h1>CTe</h1>
+        <tr><td>Digite o valor do frete:</td>
+        <td><input type="number" id="frete" class="inputUser" required></td></tr>
+        <tr><td>Digite a aliquota interna:</td>
+        <td><input type="number" id="aliquota" class="inputUser" required></td></tr>
+        <button onclick="cte()">Calcular</button>
+        <br></br>
+        O resultado é <span></span>
+    </div>
+
+    <script>
+        var basecalc = document.querySelector('#basecalc')
+        var basecalc = document.querySelector('#aliquota')
+        var resultado = document.querySelector("span")
+
+        function cte(){
+            resultado.innerHTML = parseFloat(basecalc.value)* parseFloat(aliquota.value)
+        }
+    </script>
+        <br>
+    </div>
+</body>
+</html>
